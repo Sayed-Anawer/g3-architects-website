@@ -1,0 +1,159 @@
+*{
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.center{
+ display: flex;
+ justify-content: center;
+}
+
+header{
+    width: 100vw;
+    height: 1322px;
+    background: rgba(255, 144, 14, 0.1);
+}
+.header-container{
+    max-width: 80%;
+    margin: 0 auto;
+   
+}
+
+/* Navbar style  */
+
+.navbar, .nav-links {
+    display: flex;
+}
+.heading{
+color: rgb(19, 19, 19);
+font-family: Work Sans;
+font-size: 38px;
+font-weight: 700;
+line-height: 53px;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.navbar{
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 20px;
+  
+}
+.nav-links{
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%; 
+ }
+
+ /* Branding  */
+
+ .branding-content{
+    width: 60%;
+    margin: 100px auto;
+    margin-bottom: 50px;
+ }
+ .branding-content h1{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0%;
+    text-align: center;
+ }
+
+ .branding-content p{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 25px 0;
+    }
+
+.explore-btn{
+    font-size:16px ;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    padding: 21px 28px;
+    color: white;
+    background: rgb(255, 144, 14);
+    text-align: center;
+}
+
+.heading-img img{
+    width: 100%;
+}
+/* Header section end  */
+
+@media screen and (max-width:576px) {
+    header{
+        width: 100vw;
+        height: 90vh;
+        background: rgba(255, 144, 14, 0.1);
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .nav-links{
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+    .branding-content{
+        width: 100%;
+        margin: 80px auto;
+        margin-bottom: 50px;
+     }
+    .branding-content h1{
+        color: rgb(19, 19, 19);
+        font-family: Work Sans;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0%;
+        text-align: center;
+     }
+     .branding-content p{
+        color: rgb(114, 114, 114);
+        font-family: Work Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        /* letter-spacing: 0% */
+        text-align: center;
+        margin: 20px 0;
+        }
+
+        .explore-btn{
+            font-size:14px ;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            padding: 18px 22px;
+            color: white;
+            background: rgb(255, 144, 14);
+            text-align: center;
+        }
+}
